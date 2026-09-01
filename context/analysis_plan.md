@@ -59,14 +59,4 @@ Any other interesting insights that can be taken to convert to actions for produ
 
 **Confirmation bias.** A treatment story has been built during exploration. Write the decision rule *before* running the statistical tests — what result recommends A, what recommends B, what says inconclusive.
 
----
-
-## Status
-
-**Step 1 — done.** Data is clean. Grain confirmed, no nulls of concern, no logical date violations, no duplicate player-days.
-
-**Step 2 — in progress.** Population: 82% existing / 18% new players. Split holds at 80/20 in both. Established that conversion is unchanged (bucket 0 identical at 97.31%), the effect is intensity among existing payers, and it scales with spend level (+3.4% / +5.3% / +6.6% across the 6-10, 11-20, 21+ buckets).
-
-**Step 3 — largely done via exploration.** SRM passed (χ² = 0.35, p ≈ 0.55). DAU series continuous in both arms, no logging break. Pre-period lines overlap on every metric. Control arm stable throughout, which rules out external events, shared release changes, and contamination. Novelty identified: monetization effect decays over the window, engagement effect does not.
-
 **Still to do:** event-time view, new-vs-existing split, weekend effect, fixed-window robustness check, MDE, statistical tests, recommendation.
